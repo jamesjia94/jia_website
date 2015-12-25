@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Website Title & Description for Search Engine purposes -->
+        <title>James Jia's Homepage</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <meta name="description" content="James Jia's website.">
+        <meta name="author" content="James Jia">
+
+        <!-- Mobile viewport optimized -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!-- JQuery -->
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+    </head>
+
+    <body>
+        <div class='container-fluid' id="main">
+            <div class="row">
+                <nav class="col-md-2 bs-sidebar">
+                    <ul id="sidebar" class="nav nav-stacked" data-spy="affix">
+                      <li>
+                        <h2 class="nav nav-stacked" class="logo">
+                          James Jia
+                        </h2>
+                      </li>
+                      <li>
+                        <a class="page-scroll" href="#home">Home</a>
+                      </li>
+                      <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                        <ul class="nav nav-stacked">
+                          <li><a class="page-scroll" href="#learn-algebra">Learn Algebra</a></li>
+                          <li><a class="page-scroll" href="#rss-feed-reader">RSS Feed Reader</a></li>
+                          <li><a class="page-scroll" href="#geonotification">GeoNotification App</a></li>
+                          <li><a class="page-scroll" href="#udora">Udora</a></li>
+                        </ul>
+                      </li>
+                      <li><a href='Jia_Resume.pdf'>Resume</a></li>
+                      <li>
+                        <span><a href="https://www.linkedin.com/profile/view?id=192595507"><img class="linkedin" src="/assets/linkedin.png"></a><a href="https://github.com/jamesjia94/"><img class="github" src="/assets/github_dark.png"></a></span>
+                      </li>
+                    </ul>
+                </nav>
+            
+
+            <div class="navbar navbar-default navbar-fixed-top bs-topbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button> <!-- end collapse button -->
+                    <a class="navbar-brand" href="/" class="logo" alt="James Jia's Logo">James Jia</a>
+                </div> <!-- end navbar header -->
+
+                <div class="nav-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a class="page-scroll" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#learn-algebra">Learn Algebra</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#rss-feed-reader">RSS Feed Reader</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#geonotification">GeoNotification App</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#udora">Udora</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href='Jia_Resume.pdf'>Resume</a>
+                        </li>
+                    </ul> <!-- end nav -->
+                </div> <!-- end nav-collapse -->
+            </div>
+            </div> <!-- topbar -->
+
+              <div class="col-md-10 content">
+                  <section id="home" class="group">
+                    <h2>About Me</h2>
+                    <p>
+                      I am a Master's student with a concentration in Data Science and Systems at University of California, Berkeley.
+                    </p>
+                    <p>
+                      Currently, I am working on porting <a href='https://github.com/BIDData'>BIDData</a> onto Apache Spark.
+                    </p>
+                    <p>
+                      For the past two summers, I worked at Apple as a software engineering intern where I designed a screen capturing module for multi-machine automation and a cross-functional reporting system for automated test results.
+                    </p>
+                    <p>
+                      Although most of my corporate experience has been developing tools and accompanying web development, I have experience ranging from MIPS and Intel x86 assembly programming, to building a reliable transport protocol on top of UDP datagrams, to writing a pacman agent fueled solely by heursitics and Markov Trees.
+                    </p>
+                  </section>
+                  <section id="projects" class="group">
+                    <h2>Experience</h2>
+                    <p>
+                      <ol>
+                        <li> Work
+                          <ul>
+                              <li> <a href="http://exequals.org/"> ExEquals iOS Developer </a></li>
+                              <li>iOS Developer for R2Integration</li>
+                              <li>Berkeley XLab Mobile Development Intern</li>
+                          </ul>
+                        </li>
+                        <li>Projects
+                          <ul>
+                              <li>RSS Feed Reader</li>
+                              <li>GeoNotification App</li>
+                              <li>Udora</li>
+                          </ul>
+                        </li>
+                        <li>Miscellaneous
+                          <ul>
+                              <li>Biker</li>
+                              <li>Multilingual! (English, Chinese, Spanish)</li>
+                              <li>Videogame Enthusiast</li>
+                          </ul>
+                        </li>
+                      </ol>
+                    </p>
+                    <div id="learn-algebra" class="subgroup">
+                      <h2>Learn Algebra</h2>
+                      <p>Algebra tutoring application for the Android (iOS version in development) that features an abridged algebra textbook, problem generators and explanations, a graphing interface, and statistics tracking.</p>
+
+                    </div>
+                    <div id="rss-feed-reader" class="subgroup">
+                      <h2>RSS Feed Reader</h2>
+                      <p>An iOS application that allows users to track their favorite RSS Feeds. It also detects when Internet is no longer available and pushes a notification to alert the user regarding the network change.</p>
+
+                    </div>
+                    <div id="geonotification" class="subgroup">
+                      <h2>GeoNotification App</h2>
+                      <p>Simple application that allows users to receive a notification whenever they walk within a certain radius of a particular location.  It can be customized to only notify at a certain time as well.</p>
+
+                    </div>
+                    <div id="udora" class="subgroup">
+                      <h2>Udora</h2>
+                      <p>A simple Web app that is similar in concept to Pandora, but for music videos.  When users input a particular YouTube video, Udora will stream a recommended playlist of similar videos.</p>
+                    </div>
+                  </section>
+              </div>
+            </div> 
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

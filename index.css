@@ -1,0 +1,119 @@
+body {
+  position: relative;
+}
+
+.affix-top,.affix{
+    position: static;
+}
+
+.logo{
+
+}
+
+.github{
+  width: 60%;
+  max-width: 30px;
+  height: 60%;
+
+}
+
+.linkedin{
+  width: 60%;
+  max-width: 30px;
+  height: 60%;
+}
+
+/* sidebar */
+.bs-sidebar {
+  padding-left: 20px;
+}
+
+/* all links */
+.bs-sidebar .nav>li>a {
+  color: #999;
+  padding: 4px 20px;
+  font-weight: 400;
+}
+
+/* Nested links */
+.bs-sidebar .nav .nav>li>a {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 30px;
+}
+
+/* hide all (inactive) nested list */
+.bs-sidebar .nav ul.nav {
+  display: none;           
+}
+
+/* show active nested list */
+.bs-sidebar .nav>.active>ul.nav {
+  display: block;           
+}
+
+.bs-sidebar .nav>.active>a {  color: #563d7c; }
+
+/* Custom, iPhone Retina */ 
+@media screen and (min-width: 320px) {
+    body {
+        padding-top: 50px;
+    }
+
+    .bs-sidebar{
+      display: none;
+    }
+
+    .bs-topbar>.navbar-collapse>ul{
+      overflow-y: auto;
+      max-height: 120px;
+    }
+
+/*    .github{
+      position: absolute;
+      top: 9px;
+      right: 65px;
+    }
+
+    .linkedin{
+      position: absolute;
+      top: 9px;
+      right: 100px;
+    }*/
+}
+
+/* Medium Devices, Desktops */
+@media screen and (min-width : 992px) {
+    body {
+        padding-top: 0px;
+    }
+
+    .bs-sidebar {
+      display: block;
+      float: left;
+    }
+
+    .bs-topbar{
+      display:none;
+    }
+
+    .linkedin{
+      max-height: 30px;
+      position: relative;
+      left: 20px;
+    }
+
+    .github{
+      max-height: 30px;
+      position: relative;
+      left: 30px;
+    }
+
+    #sidebar.affix-top {
+    position: static;
+  }
+
+  #sidebar.affix {
+    position: fixed;
+  }
+}
