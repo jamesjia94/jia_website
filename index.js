@@ -26,7 +26,7 @@ function setupScrollSpy() {
     $isMobile = $(window).width() < 768;
     if ($isMobile) {
         $('body').scrollspy({
-            offset: 80
+            offset: TOP_NAVBAR_HEIGHT_OFFSET
         });
     }
     else {

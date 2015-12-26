@@ -6,17 +6,20 @@ body {
 
 }
 
-.github{
-  width: 60%;
-  max-width: 30px;
-  height: 60%;
-
+img.linkedin{
+    max-height: 30px;
 }
 
-.linkedin{
-  width: 60%;
-  max-width: 30px;
-  height: 60%;
+img.github{
+    max-height: 30px;
+}
+
+.navbar-brand {
+    padding: 13px 15px;
+}
+
+.navbar-brand img {
+    margin-top: -5px;
 }
 
 /* sidebar */
@@ -64,18 +67,6 @@ body {
       overflow-y: auto;
       max-height: 120px;
     }
-
-/*    .github{
-      position: absolute;
-      top: 9px;
-      right: 65px;
-    }
-
-    .linkedin{
-      position: absolute;
-      top: 9px;
-      right: 100px;
-    }*/
 }
 
 /* Medium Devices, Desktops */
@@ -92,15 +83,7 @@ body {
       display:none;
     }
 
-    .linkedin{
-      max-height: 30px;
-      position: relative;
-      left: 20px;
-    }
-
-    .github{
-      max-height: 30px;
-      position: relative;
-      left: 30px;
+    img.github{
+        margin-left: 10px;
     }
 }

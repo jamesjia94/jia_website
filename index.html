@@ -49,61 +49,62 @@
                         <span><a href="https://www.linkedin.com/profile/view?id=192595507"><img class="linkedin" src="/assets/linkedin.png"></a><a href="https://github.com/jamesjia94/"><img class="github" src="/assets/github_dark.png"></a></span>
                       </li>
                     </ul>
-                </div>
+                </div> <!-- end sidebar -->
             
+                <div class="navbar navbar-default navbar-fixed-top bs-topbar">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button> <!-- end collapse button -->
+                        <a class="navbar-brand" href="/" class="logo" alt="James Jia's Logo">James Jia</a>
+                        <a class="navbar-brand" href="#">
+                            <img class="linkedin" src="/assets/linkedin.png" alt="">
+                        </a>
+                    </div> <!-- end navbar header -->
 
-            <div class="navbar navbar-default navbar-fixed-top bs-topbar">
-                <div class="navbar-header">
-                    <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button> <!-- end collapse button -->
-                    
-                    <a class="navbar-brand" href="/" class="logo" alt="James Jia's Logo">James Jia</a>
-                </div> <!-- end navbar header -->
+                    <div class="nav-collapse collapse navbar-responsive-collapse">
+                        <div class="container">
+                            <ul class="nav navbar-nav">
+                                <li data-target=".navbar-responsive-collapse" data-toggle="collapse">
+                                    <a class="page-scroll" href="#home">Home</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <strong class="caret"></strong></a>
+                                    
+                                    <ul class="dropdown-menu">
+                                        <li><a class="page-scroll" href="#learn-algebra" data-target=".navbar-responsive-collapse" data-toggle="collapse">Learn Algebra</a></li>
+                                        <li><a class="page-scroll" href="#rss-feed-reader" data-target=".navbar-responsive-collapse" data-toggle="collapse">RSS Feed Reader</a></li>
+                                        <li><a class="page-scroll" href="#geonotification" data-target=".navbar-responsive-collapse" data-toggle="collapse">GeoNotification App</a></li>
+                                        <li><a class="page-scroll" href="#udora" data-target=".navbar-responsive-collapse" data-toggle="collapse">Udora</a></li>
+                                    </ul> <!-- end dropdown-menu -->
+                                </li>
+                                <li>
+                                    <a href='Jia_Resume.pdf' data-target=".navbar-responsive-collapse" data-toggle="collapse">Resume</a>
+                                </li>
+                            </ul> <!-- end nav -->
+                        </div>
+                    </div> <!-- end nav-collapse -->
+                </div> <!-- topbar -->
 
-                <div class="nav-collapse collapse navbar-responsive-collapse">
-                    <div class="container">
-                        <ul class="nav navbar-nav">
-                            <li data-target=".navbar-responsive-collapse" data-toggle="collapse">
-                                <a class="page-scroll" href="#home">Home</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <strong class="caret"></strong></a>
-                                
-                                <ul class="dropdown-menu">
-                                    <li><a class="page-scroll" href="#learn-algebra" data-target=".navbar-responsive-collapse" data-toggle="collapse">Learn Algebra</a></li>
-                                    <li><a class="page-scroll" href="#rss-feed-reader" data-target=".navbar-responsive-collapse" data-toggle="collapse">RSS Feed Reader</a></li>
-                                    <li><a class="page-scroll" href="#geonotification" data-target=".navbar-responsive-collapse" data-toggle="collapse">GeoNotification App</a></li>
-                                    <li><a class="page-scroll" href="#udora" data-target=".navbar-responsive-collapse" data-toggle="collapse">Udora</a></li>
-                                </ul> <!-- end dropdown-menu -->
-                            </li>
-                            <li>
-                                <a href='Jia_Resume.pdf' data-target=".navbar-responsive-collapse" data-toggle="collapse">Resume</a>
-                            </li>
-                        </ul> <!-- end nav -->
-                    </div>
-                </div> <!-- end nav-collapse -->
-            </div> <!-- topbar -->
-
-              <div class="col-sm-10 content">
-                  <section id="home" class="group">
+                <div class="col-sm-10 content">
+                    <section id="home">
                     <h2>About Me</h2>
                     <p>
-                      I am a Master's student with a concentration in Data Science and Systems at University of California, Berkeley.
+                        I am a Master's student with a concentration in Data Science and Systems at University of California, Berkeley.
                     </p>
                     <p>
-                      Currently, I am working on porting <a href='https://github.com/BIDData'>BIDData</a> onto Apache Spark.
+                        Currently, I am working on porting <a href='https://github.com/BIDData'>BIDData</a> onto Apache Spark.
                     </p>
                     <p>
-                      For the past two summers, I worked at Apple as a software engineering intern where I designed a screen capturing module for multi-machine automation and a cross-functional reporting system for automated test results.
+                        For the past two summers, I worked at Apple as a software engineering intern where I designed a screen capturing module for multi-machine automation and a cross-functional reporting system for automated test results.
                     </p>
                     <p>
-                      Although most of my corporate experience has been developing tools and accompanying web development, I have experience ranging from MIPS and Intel x86 assembly programming, to building a reliable transport protocol on top of UDP datagrams, to writing a pacman agent fueled solely by heursitics and Markov Trees.
+                        Although most of my corporate experience has been developing tools and accompanying web development, I have experience ranging from MIPS and Intel x86 assembly programming, to building a reliable transport protocol on top of UDP datagrams, to writing a pacman agent fueled solely by heursitics and Markov Trees.
                     </p>
-                  </section>
-                  <section id="projects" class="group">
+                    </section>
+                    <section id="projects">
                     <h2>Experience</h2>
                     <p>
                       <ol>
@@ -130,7 +131,7 @@
                         </li>
                       </ol>
                     </p>
-                    <div id="learn-algebra" class="subgroup">
+                    <div id="learn-algebra">
                       <h2>Learn Algebra</h2>
                       <p>Algebra tutoring application for the Android (iOS version in development) that features an abridged algebra textbook, problem generators and explanations, a graphing interface, and statistics tracking.</p>
                       <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
@@ -139,7 +140,7 @@
                       <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
 
                     </div>
-                    <div id="rss-feed-reader" class="subgroup">
+                    <div id="rss-feed-reader">
                       <h2>RSS Feed Reader</h2>
                       <p>An iOS application that allows users to track their favorite RSS Feeds. It also detects when Internet is no longer available and pushes a notification to alert the user regarding the network change.</p>
                       <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
@@ -148,7 +149,7 @@
                       <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
 
                     </div>
-                    <div id="geonotification" class="subgroup">
+                    <div id="geonotification">
                       <h2>GeoNotification App</h2>
                       <p>Simple application that allows users to receive a notification whenever they walk within a certain radius of a particular location.  It can be customized to only notify at a certain time as well.</p>
                       <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
@@ -157,16 +158,16 @@
                       <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
 
                     </div>
-                    <div id="udora" class="subgroup">
-                      <h2>Udora</h2>
-                      <p>A simple Web app that is similar in concept to Pandora, but for music videos.  When users input a particular YouTube video, Udora will stream a recommended playlist of similar videos.</p>
-                      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-                      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-                      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-                      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-                    </div>
-                  </section>
-              </div>
+                        <div id="udora">
+                          <h2>Udora</h2>
+                          <p>A simple Web app that is similar in concept to Pandora, but for music videos.  When users input a particular YouTube video, Udora will stream a recommended playlist of similar videos.</p>
+                          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                        </div>
+                    </section>
+                </div>
             </div> 
         </div>
         <script src="index.js"></script>
