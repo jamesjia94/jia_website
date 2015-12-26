@@ -1,4 +1,4 @@
-var TOP_NAVBAR_HEIGHT_OFFSET = 50;
+var TOP_NAVBAR_HEIGHT_OFFSET = 60;
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
@@ -12,23 +12,27 @@ $(function() {
         }, 1000, 'easeInOutExpo');
         event.preventDefault();
     });
-    $('body').scrollspy({
-        target: '.bs-docs-sidebar',
-        offset: 20
-    });
+    setupScrollSpy();
 
     $(window).resize(function() {
-        $data = $('body').data("bs.scrollspy");
-        if ($(window).width() < 768){
-            $data["selector"]=".bs-topbar .nav li > a";
-        }
-        else{
-            $data["selector"]=".bs-docs-sidebar .nav li > a";
-        }
-        $('body').data("bs.scrollspy", $data);
-        
+        setupScrollSpy();
         var $affix = $(".affix");
         var $parent = $affix.parent();
         $affix.width($parent.width()); 
     });
 });
+
+function setupScrollSpy() {
+    $isMobile = $(window).width() < 768;
+    if ($isMobile) {
+        $('body').scrollspy({
+            offset: 80
+        });
+    }
+    else {
+        $('body').scrollspy({
+            offset: 20
+        });
+    }
+}
+
