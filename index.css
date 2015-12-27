@@ -1,5 +1,16 @@
 body {
     position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+}
+
+/* Fonts */
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.no-left-padding {
+    padding-left: 0px;
 }
 
 /* Carousel */
@@ -7,10 +18,21 @@ body {
     background-image: none
 }
 
+#share-carousel {
+    margin-top: 20px;
+    height: 410px;
+    width: 320px;
+}
+
+#share-carousel .item { 
+    height: 400px;
+    width: 320px;
+}
+
 #learn-algebra-carousel {
+    margin-top: 20px;
     height: 500px;
     width: 300px;
-    margin: auto;
 }
 
 #learn-algebra-carousel .item { 
@@ -43,20 +65,43 @@ body {
   background-color: #444;
 }
 
-#slide1 {
-    background: url('/assets/learn-algebra/LearnAlgebra1-small.jpg') top center no-repeat;
+.carousel-inner>.item {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-#slide2 {
-    background: url('/assets/learn-algebra/LearnAlgebra2-small.jpg') top center no-repeat;
+#shareSlide1 {
+    background: url('/assets/share/logo.png') top center no-repeat;
 }
 
-#slide3 {
-    background: url('/assets/learn-algebra/LearnAlgebra3-small.jpg') top center no-repeat;
+#shareSlide2 {
+    background: url('/assets/share/new_connection.gif') top center no-repeat;
+}
+
+#shareSlide3 {
+    background: url('/assets/share/view_doc.gif') top center no-repeat;
+}
+
+#shareSlide4 {
+    background: url('/assets/share/alison_read_notification.gif') top center no-repeat;
+}
+
+#shareSlide5 {
+    background: url('/assets/share/view_metadata.gif') top center no-repeat;
+}
+
+#learnAlgebraSlide1 {
+    background: url('/assets/learn-algebra/LearnAlgebra1-small.jpg') center center no-repeat;
+}
+
+#learnAlgebraSlide2 {
+    background: url('/assets/learn-algebra/LearnAlgebra2-small.jpg') center center no-repeat;
+}
+
+#learnAlgebraSlide3 {
+    background: url('/assets/learn-algebra/LearnAlgebra3-small.jpg') center center no-repeat;
 }
 
 /* image icons */
