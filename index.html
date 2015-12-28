@@ -7,12 +7,6 @@
     <meta name="description" content="James Jia's website.">
     <meta name="author" content="James Jia">
 
-    <!-- Rich Text -->
-    <div itemscope itemtype="http://schema.org/Person">
-    <div itemprop="name"><strong>James Jia</strong></div>
-    <div itemscope itemtype="http://schema.org/Organization"><span itemprop="name">UC Berkeley</span></div><div itemprop="description">Software Engineer</div>
-    </div>
-
     <!-- Mobile viewport optimized -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -106,9 +100,10 @@
 
             <div class="col-sm-9 content">
                 <section id="home">
+                    <!-- Rich Text -->
                     <h2 class="font-roboto">About Me</h2>
-                    <p>
-                        I am a Master's student with a concentration in Data Science and Systems at University of California, Berkeley.
+                    <p itemscope itemtype="http://schema.org/Person">
+                        I am <span itemprop="name">James Jia</span>, a Master's student with a concentration in Data Science and Systems at University of California, <span itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Berkeley</span></span>.
                     </p>
                     <p>
                         Currently, I am working on porting <a href='https://github.com/BIDData'>BIDData</a> onto Apache Spark.
